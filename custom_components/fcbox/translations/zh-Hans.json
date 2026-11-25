@@ -1,0 +1,53 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "丰巢快递柜",
+        "description": "输入丰巢账号手机号，点击提交后会发送短信验证码。\n\n**FC_USER_AUTH 留空即可**（服务端不校验它），只在你知道自己账号的 FC_USER_AUTH 时才填。",
+        "data": {
+          "mobile": "手机号",
+          "fc_user_auth": "FC_USER_AUTH（留空即可）"
+        }
+      },
+      "verify": {
+        "title": "输入验证码",
+        "description": "验证码已发送到 {mobile}，请输入收到的验证码完成登录。",
+        "data": {
+          "verify_code": "验证码"
+        }
+      }
+    },
+    "error": {
+      "cannot_send": "发送验证码失败（手机号未注册、频率限制或网络问题）",
+      "login_failed": "登录失败：验证码错误或已过期",
+      "timeout": "连接超时"
+    },
+    "abort": {
+      "already_configured": "该丰巢账号已配置（已更新 token）"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "重新登录",
+        "description": "token 失效时在这里重新登录：输入手机号 → 提交（收短信验证码）→ 填验证码。\n\n**FC_USER_AUTH 留空即可**（服务端不校验它）。",
+        "data": {
+          "mobile": "手机号",
+          "fc_user_auth": "FC_USER_AUTH（留空即可）"
+        }
+      },
+      "verify": {
+        "title": "输入验证码",
+        "description": "验证码已发送到 {mobile}，请输入收到的验证码完成重新登录。",
+        "data": {
+          "verify_code": "验证码"
+        }
+      }
+    },
+    "error": {
+      "cannot_send": "发送验证码失败（手机号未注册、频率限制或网络问题）",
+      "login_failed": "登录失败：验证码错误或已过期",
+      "timeout": "连接超时"
+    }
+  }
+}
