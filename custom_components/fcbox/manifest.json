@@ -1,0 +1,11 @@
+{
+  "domain": "fcbox",
+  "name": "丰巢快递柜",
+  "version": "1.0.0",
+  "config_flow": true,
+  "iot_class": "cloud_polling",
+  "documentation": "https://github.com/blackdog/fcbox",
+  "requirements": [],
+  "dependencies": [],
+  "codeowners": []
+}
