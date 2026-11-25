@@ -24,7 +24,7 @@
 ### HACS（自定义仓库）
 
 1. HACS → 集成 → 右上角菜单 → 自定义仓库
-2. 添加 `https://github.com/<你的用户名>/fcbox-ha`
+2. 添加 `https://github.com/739342280/fcbox-ha`
 3. 搜索「丰巢快递柜」安装
 4. 重启 HA
 
